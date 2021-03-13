@@ -1,0 +1,39 @@
+{
+  "name": "osciller",
+  "version": "0.1.0",
+  "description": "Spring based animation utilities for Vue.js",
+  "main": "dist/osciller.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "tsc --outFile dist/osciller.js && tsc -m es2015",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --fix --ignore-path .gitignore",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkofh/osciller.git"
+  },
+  "author": "Tim Morris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tkofh/osciller/issues"
+  },
+  "homepage": "https://github.com/tkofh/osciller#readme",
+  "dependencies": {
+    "vue-demi": "^0.6.0"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0-rc.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
